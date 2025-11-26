@@ -1,0 +1,91 @@
+*{
+        margin: 0;
+        padding: 0;
+        /* text-decoration: none; */
+    }
+    .navbar{
+        /* background-color: blue; */
+        padding: 5px;
+        text-decoration: none;
+    }
+    .navbar li{
+        text-decoration: none;
+        font-style: none;
+        align-content: center;
+
+    }
+    .navbar li a{
+        text-decoration: none;
+    }
+    .navbar ul{
+        font-weight: 500;
+        text-decoration: none;
+        background-color: rgb(99, 99, 225);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+
+        display: flex;
+    }
+    .nav{
+        text-decoration: none;
+        font-style: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .nav a:hover{
+        color: gray;
+    }
+    .homebox{
+        /* background-color: aqua; */
+        display: flex;
+    }
+    .para1{
+        padding-top: 10px;
+        text-decoration: none;
+        
+    }
+    .povli{
+        text-decoration: none;
+        padding: 10px;
+    }
+    .SIUL{
+        padding: 5px;
+        display: revert;
+    }
+    .Geli{
+        text-decoration: none;
+    }
+    .clli{
+        text-decoration: none;
+        padding: 10px;
+    }
+    .Lists{
+        /* display: flex; */
+        /* background-color: rebeccapurple; */
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .header{
+        padding: 10px;
+        display: inline;
+        display: flex;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-variant:small-caps;
+    }
+
+    .about{
+        text-decoration: none;
+        /* text-transform:uppercase; */
+        font-size: large;
+        font-weight: 750;
+    }
+
+    .img{
+        padding: 20px;
+        padding-bottom: 20px;
+        align-content: center;
+        text-align: center;
+        align-content: center;
+    }
+    

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar with Dropdown</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            float: left;
+            position: relative;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        /* Dropdown menu hidden */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="dropdown">
+                <a href="#" id="homeBtn">Home ▼</a>
+                <div class="dropdown-content" id="homeMenu">
+                    <a href="#">Overview</a>
+                    <a href="#">Introduction</a>
+                    <a href="#">Importance</a>
+                </div>
+            </li>
+
+            <li><a href="#">Poverty</a></li>
+            <li><a href="#">Gender Equality</a></li>
+            <li><a href="#">Child Labour</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // JavaScript to toggle dropdown on click
+        const homeBtn = document.getElementById("homeBtn");
+        const homeMenu = document.getElementById("homeMenu");
+
+        homeBtn.addEventListener("click", function(event) {
+            event.preventDefault(); 
+            homeMenu.style.display = homeMenu.style.display === "block" ? "none" : "block";
+        });
+
+        // Optional: close dropdown if clicking outside
+        document.addEventListener("click", function(e) {
+            if (!homeBtn.contains(e.target) && !homeMenu.contains(e.target)) {
+                homeMenu.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
